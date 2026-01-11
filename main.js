@@ -1,9 +1,3 @@
-window.addEventListener("DOMContentLoaded", () => {
-const cajas = document.querySelectorAll('.caja');
+document.addEventListener('DOMContentLoaded', () => {
 
-cajas.forEach(caja => {
-    caja.addEventListener('click', function() {
-        this.classList.toggle('zoom');
-    });
 });
-})

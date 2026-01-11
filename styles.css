@@ -11,39 +11,39 @@ body {
 }
 
 .container {
+    width: min(90vmin, 900px);
+    margin: 2rem auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1em;
-    align-items: center;
-    margin: 0 auto;
+    gap: 12px;
+    place-items: center;
 }
 
-.caja{
-    width:  30px;
-    height: 30px;
-    background-color: red;
-    border-radius: 100%;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 70px;
-    border-radius: 20%;
-    border: black 2px solid;
+.caja {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+    padding: 6px;
+    box-sizing: border-box;
+    background: #eee;
+    border-radius: 8px;
+    transition: transform 300ms ease, box-shadow 300ms ease, opacity 200ms;
     cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.caja:hover {
-    transform: scale(1.05);
-}
-
-.caja.zoom {
-    transform: scale(2.0);
-    z-index: 10;
+    overflow: hidden;
 }
 
 .cajita {
-    width:  40px;
-    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 6px;
+    font-weight: 700;
+    user-select: none;
+    font-size: 1.1rem;
+    /* normal */
+    transition: font-size 200ms ease, padding 200ms;
 }
